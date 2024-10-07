@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO Задать ширину элемента равной ширине экрана -->
+<!-- TODO Задать ширину элемента равной ширине экрана DONE-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/statistic_card_rectangle"
     android:elevation="16dp">
@@ -19,9 +20,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- TODO Задать высоту и шириину элемента по его содержимому -->
+    <!-- TODO Задать высоту и шириину элемента по его содержимому DONE-->
     <TextView
         android:id="@+id/total_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
         android:text="@string/statistic_card_subtitle"
         android:textColor="#9299A2"
@@ -30,8 +33,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/statistic" />
 
-    <!-- TODO Добавить элементу id со значением sum -->
+    <!-- TODO Добавить элементу id со значением sum DONE-->
     <TextView
+        android:id="@+id/sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
